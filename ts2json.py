@@ -597,10 +597,10 @@ class ts2json(chessjson.chessjson):
         for nprofile in range(0, len(profiles)): 
             lookup[profiles[nprofile]['id']] = nprofile           
         players = tournament['playerSection']['competitors']
-        for player in players: 
+        #for player in players: 
             #print(profiles[lookup[player['profileId']]])
             #print()
-            player['rating'] = int(profiles[lookup[player['profileId']]]['rating'][ratingindex])            
+            #player['rating'] = int(profiles[lookup[player['profileId']]]['rating'][ratingindex])            
         
     def update_tournament_teamcompetitors(self, tournament):
         if not tournament['teamTournament']:
